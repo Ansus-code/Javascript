@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <h1>Belajar Function</h1>
+    <script>
+      //Menuliskan function
+      //   function greting(a, b, c) {
+      //     // hasil = a + b + c;
+      //     document.writeln("Selamat Pagi", "<br>");
+      //     document.writeln("Selamat siang", "<br>");
+      //     document.writeln("Selamat Malam", "<br>");
+      //   }
+      //   greting("pagi", "siang", "malam");
+
+      //   // function tambah(a,b){
+      //   //     hasil = a + b;
+      //   //     document.writeln(hasil);
+      //   // }
+      //   // tambah(10,5)
+
+      let jam = prompt("Masukkan jam");
+      function greeting(jam) {
+        if (0 <= jam && jam <= 11) {
+          document.writeln("Selamat Pagi");
+        } else if (12 <= jam && jam <= 15) {
+          document.writeln("Selamat Siang");
+        } else if (16 <= jam && jam <= 18) {
+          document.writeln("Selamat Sore");
+        } else {
+          document.writeln("Selamat Malam");
+        }
+      }
+      greeting(jam);
+    </script>
+  </body>
+</html>

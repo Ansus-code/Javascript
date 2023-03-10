@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String</title>
+  </head>
+  <body>
+    <script>
+      // Mendeklerasikan variable
+      const value1 = parseInt("1");
+      const value2 = 1;
+
+      const sum = value1 + value2;
+
+      document.writeln(sum, "<br>");
+      //hasilkan akan jadi 11, untuk itu kita akan menambahkan fungsi parseInt
+      //menggunakan fungsi konversi string, parseFloat dan number
+
+      document.writeln(parseInt("1.2"), "<br>");
+      document.writeln(parseFloat("1.9"), "<br>");
+      document.writeln(Number("1.2"), "<br>");
+
+      //NaN
+      document.writeln(parseInt("salah"), "<br>");
+      document.writeln(parseFloat("1.9ini"), "<br>");
+      document.writeln(Number("1.9ini"), "<br>");
+
+      //Operasi Nan
+
+      const first = Number("Salah"); //NaN
+      const totalNumber = first + 100;
+      document.writeln(totalNumber, "<br>");
+
+      //isNaN
+      document.writeln(isNaN(first), "<br>");
+      document.writeln(isNaN(100), "<br>");
+      document.writeln(isNaN(NaN), "<br>");
+    </script>
+  </body>
+</html>

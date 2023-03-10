@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekpresi Function</title>
+  </head>
+  <body>
+    <script>
+      //Fungsi jadi deklrasi
+      const fungsiPerkalian = function () {
+        let angka1 = prompt("Masukkan Angka 1");
+        let angka2 = prompt("Masukkan Angka 2");
+
+        let hasilPerkalian = angka1 * angka2;
+        // Mengembalikan hasil perkalian kedalam fungsi
+        return hasilPerkalian;
+      };
+      // Menampilkan hasil perkalian yang dikembalikan
+      document.writeln(fungsiPerkalian());
+    </script>
+  </body>
+</html>
